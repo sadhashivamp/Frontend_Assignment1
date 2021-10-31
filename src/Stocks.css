@@ -26,3 +26,6 @@ tr:hover {
 .stocks {
   align-items: center;
 }
+.search {
+  width: 250px;
+}

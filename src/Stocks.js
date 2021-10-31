@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 export const Stocks = () => {
   const [data, setData] = useState([]);
+
   useEffect(() => {
     axios
       .get("https://retoolapi.dev/V9tsOI/users")
@@ -14,6 +15,23 @@ export const Stocks = () => {
   return (
     <div className="stocks">
       <h1>Stocks page</h1>
+
+      <nav class="navbar navbar-light bg-light ">
+        <div class="container-fluid">
+          <form class="d-flex">
+            <input
+              style={{ marginLeft: "600px" }}
+              class="form-control me-2"
+              type="search"
+              placeholder="Search for Symbol"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
       <table>
         <tr>
           <th>Id</th>
