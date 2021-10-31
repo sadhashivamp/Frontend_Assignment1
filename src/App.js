@@ -1,8 +1,9 @@
 import React from "react";
 import Header from "./Header";
 import { BrowserRouter, Route } from "react-router-dom";
-import { Qoutes } from "./Qoutes";
+
 import { Stocks } from "./Stocks";
+import { Qoutes } from "./Qoutes";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
       <BrowserRouter>
         <Header />
         <Route exact path="/stocks" component={Stocks} />
-        <Route path="/qoutes" component={Qoutes} />
+        <Route exact path="/qoutes" component={Qoutes} />
       </BrowserRouter>
     </div>
   );

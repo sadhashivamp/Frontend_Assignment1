@@ -9,7 +9,6 @@ const Header = () => {
         <Navbar.Brand href="home">Sensibull</Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="stocks">Stocks</Nav.Link>
-          <Nav.Link href="qoutes">Qoutes</Nav.Link>
         </Nav>
       </Container>
     </Navbar>

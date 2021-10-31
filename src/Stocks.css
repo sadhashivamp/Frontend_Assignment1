@@ -1,4 +1,10 @@
-Stocks.css table,
+.stocks {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+table,
 th,
 td {
   border: 1.5px solid black;
@@ -15,4 +21,8 @@ th {
 
 tr:hover {
   background-color: rgba(238, 238, 21, 0.714);
+}
+
+.stocks {
+  align-items: center;
 }
